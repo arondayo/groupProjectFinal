@@ -66,6 +66,61 @@
       </nav>
 
       <main>
+          
+          <div class="container mt-4">
+            <h2>Bowling Leagues</h2>
+            <table id="leaguesTable" class="table">
+              <thead>
+                <tr>
+                  <th>League</th>
+                  <th>Season</th>
+                  <th>Day</th>
+                  <th>Time</th>
+                  <th>Type</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Rows will be dynamically added here -->
+              </tbody>
+            </table>
+          </div>
+ 
+          <script>
+            // Function to add a new row to the table
+            function addRow(league, season, day, time, type) {
+              var table = document.getElementById("leaguesTable").getElementsByTagName('tbody')[0];
+              var newRow = table.insertRow(table.rows.length);
+              var cells = [
+                newRow.insertCell(0),
+                newRow.insertCell(1),
+                newRow.insertCell(2),
+                newRow.insertCell(3),
+                newRow.insertCell(4)
+              ];
+              cells[0].innerHTML = league;
+              cells[1].innerHTML = season;
+              cells[2].innerHTML = day;
+              cells[3].innerHTML = time;
+              cells[4].innerHTML = type;
+            }
+
+            // Example data (you can replace this with your own data)
+            var leaguesData = [
+              { league: "Nasty Neon 9 Pin", season: "Spring", day: "Thursday", time: "7:00 PM", type: "Hdcp Adlt Mix" },
+              { league: "Tuesday Trio's Series 1: The Short Shot", season: "Spring", day: "Tuesday", time: "7:00 PM", type: "Hdcp Adlt/Yth Mix" },
+              { league: "Tuesday Trio's Series 2: The Middle of the Road", season: "Spring", day: "Tuesday", time: "7:00 PM", type: "Hdcp Adlt/Yth Mix" },
+              { league: "Tuesday Trio's Series 3: The Long Shot", season: "Spring", day: "Tuesday", time: "7:00 PM", type: "Hdcp Adlt/Yth Mix" },
+              
+              
+            ];
+
+            // Add rows for each league in the data
+            leaguesData.forEach(function(data) {
+              addRow(data.league, data.season, data.day, data.time, data.type);
+               
+            });
+          </script>
+
 
       </main>
 
