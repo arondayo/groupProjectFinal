@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <style>
       body {
-        background-color:rgb(222, 225, 228); /* Choose your desired shade of gray */
+        background-color:rgb(222, 225, 228);
         display: flex;
         flex-direction: column;
         min-height: 100vh;
@@ -19,7 +19,6 @@
       footer {
         margin-top: auto;
       }
-      /* Testing */
       .calendar {
         border: 1px solid #ccc;
         border-radius: 5px;
@@ -47,6 +46,10 @@
         border: 1px solid black;
         padding: 10px;
         z-index: 1;
+      }
+      .event-info-phone {
+        top: 50%;
+        right: 20%;
       }
       .calendar-cell:hover .event-info {
         display: block;
@@ -104,7 +107,6 @@
       </nav>
 
       <main>
-        <!-- Testing -->
         <div style="background-color: rgb(222, 225, 228);">
           <div class="container">
             <div class="row">
@@ -161,7 +163,7 @@
                       <td class="calendar-cell">7</td>
                       <td class="calendar-cell">8</td>
                       <td class="calendar-cell event-cell">9
-                        <span class="event-info">
+                        <span class="event-info event-info-phone">
                           <strong>2PM - 4PM</strong>
                           <br />
                           Family Friendly Early Cosmic Bowling!
