@@ -19,6 +19,44 @@
       footer {
         margin-top: auto;
       }
+      /* Testing */
+      .calendar {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+      }
+      .calendar-header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .calendar-table {
+        width: 100%;
+      }
+      .calendar-cell {
+        text-align: center;
+        padding: 10px;
+        border: 1px solid #eee;
+      }
+      .calendar-cell:hover {
+        background-color: gray;
+      }
+      .event-info {
+        display: none;
+        position: absolute;
+        background-color: white;
+        border: 1px solid black;
+        padding: 10px;
+        z-index: 1;
+      }
+      .calendar-cell:hover .event-info {
+        display: block;
+      }
+      .grey-text {
+        color:grey
+      }
+      .event-cell {
+        background-color: rgb(250, 199, 106);
+      }
     </style>
   </head>
   <body>
@@ -66,7 +104,168 @@
       </nav>
 
       <main>
-
+        <!-- Testing -->
+        <div style="background-color: rgb(222, 225, 228);">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 text-center py-4" style="font-family: 'Lobster Two';">
+                <h1>Monthly Specials / Coupons</h1>
+              </div>
+            </div>
+            <div class="row justify-content-center mt-5">
+              <div class="col-12 col-md-12 calendar mb-5" style="background-color: white;">
+                <div class="calendar-header">
+                  <h2>March Specials & Events</h2>
+                </div>
+                <table class="calendar-table">
+                  <thead>
+                    <tr style="background-color: orange;">
+                      <th>Sun</th>
+                      <th>Mon</th>
+                      <th>Tue</th>
+                      <th>Wed</th>
+                      <th>Thu</th>
+                      <th>Fri</th>
+                      <th>Sat</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="calendar-cell grey-text">25</td>
+                      <td class="calendar-cell grey-text">26</td>
+                      <td class="calendar-cell grey-text">27</td>
+                      <td class="calendar-cell grey-text">28</td>
+                      <td class="calendar-cell grey-text">29</td>
+                      <td class="calendar-cell">1</td>
+                      <td class="calendar-cell">2</td>
+                    </tr>
+                    <tr>
+                      <td class="calendar-cell">3</td>
+                      <td class="calendar-cell event-cell">4
+                        <span class="event-info">
+                          <strong>5PM - CLOSE</strong>
+                          <br />
+                          $5 Per Person All You Can Bowl, $2.50 Shoe Rental!
+                          <hr />
+                          $2 Domestic Drafts
+                          <br />
+                          $3 Green Tea Shots
+                          <br />
+                          $5 Fiestada Pizza & Chips
+                          <br />
+                          $2 Hot Dogs
+                        </span>
+                      </td>
+                      <td class="calendar-cell">5</td>
+                      <td class="calendar-cell">6</td>
+                      <td class="calendar-cell">7</td>
+                      <td class="calendar-cell">8</td>
+                      <td class="calendar-cell event-cell">9
+                        <span class="event-info">
+                          <strong>2PM - 4PM</strong>
+                          <br />
+                          Family Friendly Early Cosmic Bowling!
+                          <br />
+                          Saint Patrick's Day Family Party
+                          <br />
+                          Wear Green And Be Entered Into Our St Patty's Day Door Prize Give Away
+                          <br />
+                          Find a Gold Coin And Win A Prize!
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="calendar-cell">10</td>
+                      <td class="calendar-cell event-cell">11
+                        <span class="event-info">
+                          <strong>5PM - CLOSE</strong>
+                          <br />
+                          $5 Per Person All You Can Bowl, $2.50 Shoe Rental!
+                          <hr />
+                          $2 Domestic Drafts
+                          <br />
+                          $3 Green Tea Shots
+                          <br />
+                          $5 Fiestada Pizza & Chips
+                          <br />
+                          $2 Hot Dogs
+                        </span>
+                      </td>
+                      <td class="calendar-cell">12</td>
+                      <td class="calendar-cell">13</td>
+                      <td class="calendar-cell">14</td>
+                      <td class="calendar-cell">15</td>
+                      <td class="calendar-cell">16</td>
+                    </tr>
+                    <tr>
+                      <td class="calendar-cell event-cell">17
+                        <span class="event-info">
+                          <strong>9AM - NOON</strong>
+                          <br />
+                          Saint Patrick's Day Drink & Bowl Party
+                          <hr />
+                          Drink & Shot Specials All Day
+                          <br />
+                          All You Can Bowl Shot Special No Bumper Bowling Until Noon
+                          <br />
+                          Donuts & Bailey's
+                          <br />
+                          NOON - 8PM : Open Bowling
+                        </span>
+                      </td>
+                      <td class="calendar-cell event-cell">18
+                        <span class="event-info">
+                          <strong>5PM - CLOSE</strong>
+                          <br />
+                          $5 Per Person All You Can Bowl, $2.50 Shoe Rental!
+                          <hr />
+                          $2 Domestic Drafts
+                          <br />
+                          $3 Green Tea Shots
+                          <br />
+                          $5 Fiestada Pizza & Chips
+                          <br />
+                          $2 Hot Dogs
+                        </span>
+                      </td>
+                      <td class="calendar-cell">19</td>
+                      <td class="calendar-cell">20</td>
+                      <td class="calendar-cell">21</td>
+                      <td class="calendar-cell">22</td>
+                      <td class="calendar-cell">23</td>
+                    </tr>
+                    <tr>
+                      <td class="calendar-cell">24</td>
+                      <td class="calendar-cell event-cell">25
+                        <span class="event-info">
+                          <strong>5PM - CLOSE</strong>
+                          <br />
+                          $5 Per Person All You Can Bowl, $2.50 Shoe Rental!
+                          <hr />
+                          $2 Domestic Drafts
+                          <br />
+                          $3 Green Tea Shots
+                          <br />
+                          $5 Fiestada Pizza & Chips
+                          <br />
+                          $2 Hot Dogs
+                        </span>
+                      </td>
+                      <td class="calendar-cell">26</td>
+                      <td class="calendar-cell">27</td>
+                      <td class="calendar-cell">28</td>
+                      <td class="calendar-cell">29</td>
+                      <td class="calendar-cell">30</td>
+                    </tr>
+                    <tr>
+                      <td class="calendar-cell">31</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
 
       <footer class="container-fluid bg-body-tertiary" data-bs-theme="dark">
