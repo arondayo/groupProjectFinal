@@ -14,6 +14,18 @@
     font-family: "Lobster Two", sans-serif;
     font-weight: 1000;
     font-style: normal;
+    transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+  }
+  .lobster-two-bold-title:hover {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    color: orange;
+    transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
   }
   
   .lobster-two-regular-italic {
@@ -31,10 +43,10 @@
   .nav-link:hover{
     /* background-color: orange; */
     color: orange !important;
-    font-weight: bold;
+    /* font-weight: bold; */
   }
   .dropdown-item:hover{
     /* background-color: orange; */
     color: orange !important;
-    font-weight: bold;
+    /* font-weight: bold; */
   }
