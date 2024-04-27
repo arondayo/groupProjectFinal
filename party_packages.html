@@ -13,12 +13,17 @@
   <style>
     /* Add custom styles for the images */
     .card-img-top {
-      height: 150px; /* Set the desired height */
-      object-fit: scale-down; /* Cover the entire area */
+      height: 250px; /* Set the desired height */
+      object-fit: fill; /* Cover the entire area */
+    }
+    body {
+      background-color:rgb(222, 225, 228); /* Choose your desired shade of gray */
     }
   </style>
 </head>
 <body>
+  <div class="p-3 mb-2 bg-secondary-subtle"></div>
+
   <nav class="navbar navbar-expand-lg bg-body-tertiary py-3 " data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand lobster-two-bold-title fs-3" href="index.html">La Ru Bowling Lanes</a>
@@ -72,6 +77,26 @@
       <div class="container">
           <div class="row">
               <div class="col-lg-4 mb-4">
+                <div class="card h-100">
+                  <img src="Images/spare.png" class="card-img-top" alt="Spare Party Package">
+                  <div class="card-header bg-dark text-white">
+                      <h2 class="card-title">Spare Party Package</h2>
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text">Includes:</p>
+                      <ul class="list-group">
+                          <li class="list-group-item">2 hours of bowling</li>
+                          <li class="list-group-item">Shoe rental included</li>
+                          <li class="list-group-item">Pizza and soft drinks</li>
+                          <li class="list-group-item">Party favors</li>
+                      </ul>
+                  </div>
+                  <div class="card-footer">
+                      <p class="card-text">Price: $18.50 Per Person</p>
+                  </div>
+              </div>
+              </div>
+              <div class="col-lg-4 mb-4">
                   <div class="card h-100">
                       <img src="Images/bowling strike.png" class="card-img-top" alt="Strike Party Package">
                       <div class="card-header bg-dark text-white">
@@ -80,7 +105,7 @@
                       <div class="card-body">
                           <p class="card-text">Includes:</p>
                           <ul class="list-group">
-                              <li class="list-group-item">2.5 hours of Bowling & Shoe Rental</li>
+                              <li class="list-group-item">2.5 hours of bowling</li>
                               <li class="list-group-item">Shoe rental included</li>
                               <li class="list-group-item">Pizza and soft drinks</li>
                               <li class="list-group-item">Party favors</li>
@@ -94,27 +119,6 @@
 
               <div class="col-lg-4 mb-4">
                 <div class="card h-100">
-                  <img src="Images/spare.png" class="card-img-top" alt="Spare Party Package">
-                  <div class="card-header bg-dark text-white">
-                      <h2 class="card-title">Spare Party Package</h2>
-                  </div>
-                  <div class="card-body">
-                      <p class="card-text">Includes:</p>
-                      <ul class="list-group">
-                          <li class="list-group-item">2 hours of bowling & Shoe Rental</li>
-                          <li class="list-group-item">1 Soft Drink/Juice/Water</li>
-                          <li class="list-group-item">Pizza and soft drinks</li>
-                          <li class="list-group-item">Party favors</li>
-                      </ul>
-                  </div>
-                  <div class="card-footer">
-                      <p class="card-text">Price: $18.50 Per Person</p>
-                  </div>
-              </div>
-              </div>
-
-              <div class="col-lg-4 mb-4">
-                <div class="card h-100">
                   <img src="Images/bowling-turkey.png" class="card-img-top" alt="Turkey Party Package">
                   <div class="card-header bg-dark text-white">
                       <h2 class="card-title">Turkey Party Package</h2>
@@ -124,7 +128,7 @@
                       <ul class="list-group">
 
 
-                          <li class="list-group-item">2 hours of bowling</li>
+                          <li class="list-group-item">3 hours of bowling</li>
                           <li class="list-group-item">Shoe rental included</li>
                           <li class="list-group-item">Pizza and soft drinks</li>
                           <li class="list-group-item">Party favors</li>
@@ -136,6 +140,12 @@
               </div>
               </div>
           </div>
+      </div>
+
+      <div class="container">
+        <p class="text-center fs-3">Add $2 per bowler for Cosmic Parties.</p>
+        <p class="text-center fs-3">Cosmic Bowling Parties are only available during regularly scheduled Cosmic Bowling Times.</p>
+        <p class="text-center fs-3">Please <a href="contact_us.html">contact us</a> for information on available Cosmic Party Times.</p>
       </div>
   </main>
 
