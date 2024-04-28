@@ -1,0 +1,17 @@
+- Aaron Anderson
+	- created nav bar and its links + footer
+	- kids bowl free page
+	- contact us page
+	- join our team page
+	- groupon section of specials and coupons
+- Brayden Stubbs
+	- home page 
+	- winter open page
+	- coupons and specials (cooked with javascript to make a calendar)
+- Ben Hudson
+	- party packages page
+	- (figured out our footer problem, saved us tons of time)
+	- hours and pricing
+	- spring and summer league page
+- Sam Beasley (???)
+	- Was around for the midterm when we did the assessment and presentation for this website but has been completely MIA for the final.
